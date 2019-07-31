@@ -1,5 +1,3 @@
-# histopathologic-cancer-detection
-EDA and baseline machine learning model prediction for histopathologic cancer detection challenge via Kaggle
 # A Jupyter Notebook For Investigating and Creating Baseline Models For Histopathologic Cancer Detection
 
 As the title suggests. This is a jupyter notebook that utilizes basic machine learning and data exploration techniques to both explore, and create a baseline model for, the dataset/competition *'Histopathologic Cancer Detection'*. <br>The following is the information from Kaggle:<br><br>
