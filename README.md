@@ -3,11 +3,25 @@
 As the title suggests. This is a jupyter notebook that utilizes basic machine learning and data exploration techniques to both explore, and create a baseline model for, the dataset/competition *'Histopathologic Cancer Detection'*. <br>The following is the information from Kaggle:<br><br>
 
 ```
-Create an algorithm to identify metastatic cancer in small image patches taken from larger digital pathology scans. The data for this competition is a slightly modified version of the PatchCamelyon (PCam) benchmark dataset (the original PCam dataset contains duplicate images due to its probabilistic sampling, however, the version presented on Kaggle does not contain duplicates).
+Create an algorithm to identify metastatic cancer in small
+image patches taken from larger digital pathology scans. 
+The data for this competition is a slightly modified version
+of the PatchCamelyon (PCam) benchmark dataset 
+(the original PCam dataset contains duplicate images due to 
+its probabilistic sampling, however, the version presented 
+on Kaggle does not contain duplicates).
 
-PCam is highly interesting for both its size, simplicity to get started on, and approachability. In the authors' words:
+PCam is highly interesting for both its size, simplicity to 
+get started on, and approachability. In the authors' words:
 
-[PCam] packs the clinically-relevant task of metastasis detection into a straight-forward binary image classification task, akin to CIFAR-10 and MNIST. Models can easily be trained on a single GPU in a couple hours, and achieve competitive scores in the Camelyon16 tasks of tumor detection and whole-slide image diagnosis. Furthermore, the balance between task-difficulty and tractability makes it a prime suspect for fundamental machine learning research on topics as active learning, model uncertainty, and explainability.
+[PCam] packs the clinically-relevant task of metastasis detection 
+into a straight-forward binary image classification task, akin to 
+CIFAR-10 and MNIST. Models can easily be trained on a single GPU 
+in a couple hours, and achieve competitive scores in the Camelyon16 
+tasks of tumor detection and whole-slide image diagnosis. 
+Furthermore, the balance between task-difficulty and tractability 
+makes it a prime suspect for fundamental machine learning research 
+on topics as active learning, model uncertainty, and explainability.
 ```
 
 ## Getting Started
@@ -28,38 +42,43 @@ PCam is highly interesting for both its size, simplicity to get started on, and 
 ## Prerequisites
 
 ```
-absl-py==0.7.1
-astor==0.8.0
+apipkg==1.5
+atomicwrites==1.3.0
+attrs==19.1.0
+colorama==0.4.1
+contextlib2==0.5.5
 cycler==0.10.0
-gast==0.2.2
-google-pasta==0.1.7
-grpcio==1.22.0
+execnet==1.6.1
 h5py==2.9.0
+importlib-metadata==0.19
 joblib==0.13.2
 Keras==2.2.4
 Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.0
 kiwisolver==1.1.0
-Markdown==3.1.1
 matplotlib==3.1.1
+mock==3.0.5
+more-itertools==7.2.0
 numpy==1.17.0
+opencv-contrib-python-headless==4.1.0.25
+packaging==19.1
 pandas==0.25.0
-protobuf==3.9.0
+path.py==12.0.1
+pluggy==0.12.0
+py==1.8.0
 pyparsing==2.4.2
+pytest==5.0.1
+pytest-shutil==1.7.0
 python-dateutil==2.8.0
 pytz==2019.1
 PyYAML==5.1.1
 scikit-learn==0.21.3
 scipy==1.3.0
-seaborn==0.9.0
 six==1.12.0
 sklearn==0.0
-tensorboard==1.14.0
-tensorflow==1.14.0
-tensorflow-estimator==1.14.0
 termcolor==1.1.0
-Werkzeug==0.15.5
-wrapt==1.11.2
+wcwidth==0.1.7
+zipp==0.5.2
 ```
 
 ## Installation
@@ -67,7 +86,9 @@ wrapt==1.11.2
 
 1. Clone this repository and navigate into it within the command line
 
-2. Create and activate an environment (if you wish)<br>
+2. Unzip the inline-images folder into the data folder
+
+3. Create and activate an environment (if you wish)<br>
 ` python -m venv env `<br>
 ` env\scripts\activate `<br>
 ` python -m pip install --upgrade pip `<br>
@@ -75,7 +96,7 @@ wrapt==1.11.2
 3. Execute the following commands to install all the requiremets<br>
 ` pip install -r requirements.txt`<br>
 
-4. Join this competition to be able to download the dataset (or find it directly via NOAA) and create the following folder structure<br>
+4. Download the dataset [here](https://github.com/basveeling/pcam) and adhere to the following folder structure<br>
 ```
 histopathologic-cancer-detection
 |---- requirements.txt
@@ -114,7 +135,7 @@ histopathologic-cancer-detection
 4. To open the jupyter environment run the following<br>
 ` jupyter notebook --port=8888`<br>
 
-5. Navigate to the cloned directory and open the .ipynb file<br><br>
+5. Navigate to the cloned directory and open the .ipynb file you wish to see, **-eda** or **-model**<br><br>
 ***See deployment for notes on how to deploy the project on a live system.***
 
 ## Deployment
